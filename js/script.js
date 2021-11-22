@@ -20,6 +20,18 @@ $(document).ready(function () {
 
     });
 
+    // cs 슬라이드
+    new Swiper('.sw-cs', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        slidesPerGroup: 2,
+        pagination: {
+            el: ".sw-cs-pg",
+            clickable: true,
+        },
+    });
+
+
     // 베스트 상품 메뉴 
     var best_cate_list = $('.best-cate-list>li');
     var best_cate_bg = $('.best-cate-bg');
@@ -36,7 +48,7 @@ $(document).ready(function () {
     });
 
     // 배너슬라이드
-    new Swiper('.swiper-container', {
+    new Swiper('.sw-banner2', {
         loop: true,
         autoplay: {
             delay: 2000,
